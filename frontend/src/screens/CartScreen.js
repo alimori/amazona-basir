@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 import { Link } from 'react-router-dom';
@@ -7,6 +7,7 @@ import MessageBox from '../components/MessageBox';
 
 export default function CartScreen(props) {
 
+  const navigate = useNavigate();
   const params = useParams();
   const productId = params.id;
 
@@ -30,7 +31,7 @@ export default function CartScreen(props) {
   };
 
   const checkoutHandler = () => {
-    props.history.push('/signin?redirect=shipping');
+    navigate('/signin?redirect=shipping');
   };
 
   return (
