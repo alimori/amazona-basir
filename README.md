@@ -182,3 +182,28 @@ I am Ali, Basir's student. Welcome to Basir React and Node tutorial to build a f
 25. Create Payment Screen
     1. create payment fields
     2. implement shipping constant, actions and reducers
+26. Design Place Order Screen
+    1. design order summary fields
+    2. design order action
+27. Create Place Order API
+    1. createOrder api
+    2. create orderModel
+    3. create orderRouter
+    4. create post order route
+28. Implement PlaceOrder Action
+    1. handle place order button click
+    2. create place order constants, action and reducer
+29. Create Order Screen
+    1. build order api for /api/orders/:id
+    2. create OrderScreen.js
+    3. dispatch order details action in useEffect
+    4. load data with useSelector
+    5. show data like place order screen
+    6. create order details constant, action and reducer
+30. Add PayPal Button
+    1. get client id from paypal
+    2. set it in .env file
+    3. create route form /api/paypal/clientId
+    4. create getPaypalClientID in api.js
+    5. add paypal checkout script in OrderScreen.js
+    6. show paypal button
