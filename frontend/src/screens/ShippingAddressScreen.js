@@ -24,7 +24,7 @@ export default function ShippingAddressScreen(props) {
     dispatch(
       saveShippingAddress({ fullName, address, city, postalCode, country })
     );
-    props.history.push('/payment');
+    navigate('/payment');
   };
   return (
     <div>
